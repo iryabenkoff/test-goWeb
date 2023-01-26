@@ -37,9 +37,8 @@ function handleSubmit(e) {
     elements: { name, email },
   } = e.currentTarget;
 
-  e.preventDefault();
-
   if (name.value === '' || email.value === '') {
+    e.preventDefault();
     formWorning.style.opacity = '1';
   } else {
     formWorning.style.opacity = '0';
