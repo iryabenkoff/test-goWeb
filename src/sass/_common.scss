@@ -1,0 +1,18 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -137px;
+  visibility: hidden;
+
+  @media (width >= 768px) {
+    top: -95px;
+  }
+
+  @media (width >= 1360px) {
+    top: -111px;
+  }
+}

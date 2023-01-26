@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Ledger</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.min.css"
+      integrity="sha512-Ne9/ZPNVK3w3pBBX6xE86bNG295dJl4CHttrCp3WmxO+8NQ2Vn8FltNr6UsysA1vm7NE6hfCszbXe3D6FUNFsA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="header-hero">
+      <picture class="header-hero__picture">
+        <source
+          srcset="
+            ../src/images/home/showcase.jpg    1x,
+            ../src/images/home/showcase@2x.jpg 2x
+          "
+          type="image/jpeg"
+        />
+
+        <source
+          srcset="
+            ../src/images/home/showcase.webp    1x,
+            ../src/images/home/showcase@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <img
+          class="header-hero__img"
+          src="../src/images/home/showcase.jpg"
+          alt="city"
+        />
+      </picture>
+      <include src="./partials/header.html"></include>
+      <include src="./partials/hero.html"></include>
+    </div>
+    <main class="main">
+      <include src="./partials/about.html"></include>
+      <include src="./partials/cases.html"></include>
+      <include src="./partials/blog.html"></include>
+      <include src="./partials/team.html"></include>
+    </main>
+    <include src="./partials/contact.html"></include>
+    <include src="./partials/footer.html"></include>
+
+    <!-- js -->
+
+    <script type="module" src="./js/fixed.js"></script>
+    <script type="module" src="./js/anchor.js"></script>
+    <script type="module" src="./js/lightBox.js"></script>
+    <script type="module" src="./js/form.js"></script>
+  </body>
+</html>

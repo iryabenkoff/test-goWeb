@@ -1,0 +1,51 @@
+<a class="anchor" id="contact"></a>
+<aside class="contact">
+  <picture class="contact__picture">
+    <source
+      srcset="
+        ../src/images/home/contact.jpg    1x,
+        ../src/images/home/contact@2x.jpg 2x
+      "
+      type="image/jpeg"
+    />
+
+    <source
+      srcset="
+        ../src/images/home/contact.webp    1x,
+        ../src/images/home/contact@2x.webp 2x
+      "
+      type="image/webp"
+    />
+
+    <img
+      class="contact__img"
+      src="../src/images/home/contact.jpg"
+      alt="man is looking for the contact"
+    />
+  </picture>
+
+  <div class="form">
+    <form class="form__form" action="#" method="post" data-netlify="true">
+      <h3 class="form__title">Request callback</h3>
+      <div class="form__x">
+        <div class="form__input-wrapper">
+          <input class="form__input" type="text" name="name"/>
+          <span class="form__placeholder">Enter your name</span>
+        </div>
+        <div class="form__input-wrapper form__input-wrapper--email">
+          <input
+            class="form__input"
+            type="email"
+            name="email"
+          />
+          <span class="form__placeholder">Enter email*</span>
+        </div>
+        <div class="form__worning">
+          <img src="../src/images/form/worning.svg" alt="worning sign">
+          <p class="form__worning-text">This is a required field</p>
+        </div>
+      </div>
+      <button class="form__btn btn" type="submit" aria-label="Send">Send</button>
+    </form>
+  </div>
+</aside>

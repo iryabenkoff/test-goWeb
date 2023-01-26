@@ -1,0 +1,156 @@
+.contact {
+  &__img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (width >= 768px) {
+    display: flex;
+
+    &__picture {
+      width: 50%;
+    }
+  }
+}
+
+.form {
+  padding: 51px 20px 25px;
+
+  background-color: var(--hover-grey-btn);
+
+  &__title {
+    margin-bottom: 69px;
+
+    font-size: 32px;
+    line-height: 1.5;
+
+    color: var(--black);
+  }
+
+  &__x {
+    position: relative;
+  }
+
+  &__input-wrapper {
+    position: relative;
+
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    padding: 16px 8px;
+
+    width: 100%;
+    border-radius: 5px;
+
+    border: none;
+    outline: none;
+
+    font-size: 16px;
+    line-height: 1.44;
+  }
+
+  &__input:focus ~ &__placeholder {
+    top: -16%;
+  }
+
+  &__input-wrapper--email {
+    margin-bottom: 24px;
+  }
+
+  &__placeholder {
+    position: absolute;
+    top: 52%;
+    left: 8px;
+    transform: translate(0, -50%);
+
+    font-size: 16px;
+    line-height: 1.44;
+
+    color: var(--placeholder);
+
+    transition: var(--cubic);
+
+    pointer-events: none;
+  }
+
+  &__worning {
+    position: absolute;
+    bottom: -18%;
+    left: 1%;
+
+    display: flex;
+    align-items: center;
+
+    opacity: 0;
+
+    transition: var(--cubic);
+  }
+
+  &__worning-text {
+    line-height: 1.38;
+
+    color: var(--black);
+  }
+
+  &__btn {
+    padding: 16px 56px;
+
+    background-color: var(--accent);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-hover);
+    }
+  }
+
+  @media (width >= 768px) {
+    padding: 32px;
+
+    width: 50%;
+
+    &__title {
+      margin-bottom: 24px;
+
+      font-size: 40px;
+      line-height: 1.35;
+    }
+
+    &__input {
+      font-size: 18px;
+      line-height: 1.39;
+    }
+
+    &__input:focus ~ &__placeholder {
+      top: -19%;
+    }
+
+    &__placeholder {
+      font-size: 18px;
+      line-height: 1.39;
+    }
+  }
+
+  @media (width >= 1360px) {
+    padding: 56px 28px 77px 20px;
+
+    &__title {
+      margin-bottom: 31px;
+    }
+
+    &__input-wrapper {
+      margin-bottom: 25px;
+    }
+
+    &__input-wrapper--email {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.x {
+  top: -19%;
+}
